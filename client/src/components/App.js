@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Router history={browserHistory}>
         <Route component={Head}>
-          <Route path="/" component={Body} />
+          <Route path="/" component={Api_Demo} />
           <Route path="/display" component={Display} />
           <Route path="/apidemo" component={Api_Demo} />
           <Route path="/shoppingcart" component={ShoppingCart}>

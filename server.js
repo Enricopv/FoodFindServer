@@ -3,6 +3,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 var api = require('./routes/api');
+var dotenv = require('dotenv');
 
 var server = express();
 
@@ -13,6 +14,9 @@ server.use(logger('dev'));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
 server.use(cookieParser());
+
+// Load Environment Variables
+dotenv.load();
 
 // Express only serves static assets in production
 if (process.env.NODE_ENV === 'production') {

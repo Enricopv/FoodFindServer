@@ -18,7 +18,7 @@ class Api_Demo extends Component {
   }
 
   componentDidMount() {
-    Axios.get('/api/getdata')
+    Axios.get('/api/getfoodlocation')
       .then(response => {
         this.setState({
           data: response.data
