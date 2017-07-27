@@ -1,0 +1,27 @@
+.ShoppingCart {
+}
+
+.CartProduct{
+  width: 10%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.color {
+
+  color: white;
+  font-size: 1.3em;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+

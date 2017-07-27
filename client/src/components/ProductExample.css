@@ -1,0 +1,16 @@
+.ProductExample {
+  margin-top: 75px;
+}
+
+.Product {
+  height: 200px;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.productTitle {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+

@@ -1,0 +1,131 @@
+[  
+   {  
+      "name":"test",
+      "ingredients":[  
+         "butter",
+         "onion"
+      ],
+      "description":"hello",
+      "youtube":"https://www.youtube.com/embed/uiG_K8mHv5Y",
+      "instructions":[  
+         "HALLO",
+         "BUENAS NOCHES"
+      ],
+      "displayname":[  
+         "YUM",
+         "YUP"
+      ]
+   },
+   {  
+      "name":"Cheesy Biscuit & Eggs",
+      "ingredients":[  
+         "salt",
+         "pepper",
+         "biscuit dough",
+         "eggs",
+         "milk",
+         "bacon",
+         "chives",
+         "cheddar cheese"
+      ],
+      "description":"Brought to you by Tasty",
+      "youtube":"https://www.youtube.com/embed/bi-rgrst51s",
+      "instructions":[  
+         "Preheat oven to 350&deg;F/180&deg;C.",
+         "Cut 6 biscuits in half, and on a floiured surface, roll each half out into 5 inch diameter circles.",
+         "Press the biscuit circles into a greased muffin tin.",
+         "In a bowl, whisk the eggs, milk, salt, and pepper",
+         "Pour egg mixture into biscuit cups, no more than half full",
+         "Divide the bacon and chives amoung the cups, the top each one with cheese.",
+         "Bake 15-20 minutes, until eggs are full set.",
+         "Enjoy!"
+      ],
+      "displayname":[  
+         "1 tube refrigerated jumbo biscuits",
+         "6 eggs",
+         "1/2 cups milk",
+         "1/4 tsp salt",
+         "1/4 tsp pepper",
+         "1 cup cooked bacon, chopped",
+         "1/2 cup chives, chopped",
+         "1 1/2 cups shredded cheddar cheese"
+      ]
+   },
+   {  
+      "name":"Chicken & Biscuits Bake",
+      "ingredients":[  
+         "butter",
+         "onion",
+         "flour",
+         "salt",
+         "pepper",
+         "heavy cream",
+         "frozen mixed vegetables",
+         "rotisserie chicken",
+         "biscuit dough"
+      ],
+      "description":"Brought to you by Tasty",
+      "youtube":"https://www.youtube.com/embed/LJbRhQbgnYo",
+      "instructions":[  
+         "Preheat oven to 350˚F/180˚C.",
+         "In a large pot over medium-high heat, melt the butter.",
+         "Add the onion, stir until softened. About 1 minute.",
+         "Whisk in the flour, stirring constantly to prevent the flour from browning. About 1 minute.",
+         "Whisk in the chicken broth, salt, and pepper. Continue to whisk until no lumps remain.",
+         "Whisk in the heavy cream. Bring to a light simmer until the sauce has thickened slightly. Test for additional salt/pepper.",
+         "Add the mixed vegetables and shredded chicken, stir until fully incorporated.",
+         "Transfer to a 9x13-inch baking dish.",
+         "Evenly top with 12 pieces of biscuit dough (you will have extra biscuits, which can be baked off separately).",
+         "Bake in a preheated oven for 20 minutes, until the biscuits are golden and the gravy mixture is bubbling.",
+         "Cool slightly before serving.",
+         "Enjoy!"
+      ],
+      "displayname":[  
+         "6 tablespoons butter",
+         "1 onion, chopped",
+         "1/2 cup flour",
+         "3 cups chicken broth",
+         "1 teaspoon salt",
+         "1 teaspoon pepper",
+         "1 cup heavy cream",
+         "2 1/2 cups frozen mixed vegetables",
+         "1 rotisserie chicken, shredded",
+         "2 tubes biscuit dough (8 biscuits each)"
+      ]
+   },
+   {  
+      "name":"Chipotle Popcorn Chicken",
+      "ingredients":[  
+         "salt",
+         "pepper",
+         "chicken breast",
+         "buttermilk",
+         "can chiles, adobo",
+         "chili powder",
+         "paprika",
+         "canola oil",
+         "bread crumbs"
+      ],
+      "description":"Brought to you by Tasty",
+      "youtube":"https://www.youtube.com/embed/Vib2m9lPfcI",
+      "instructions":[  
+         "Cut chicken breast into bite-sized pieces and place them in a medium-sized bowl",
+         "Pour buttermlk and can of chiles over the chicken, making sure to get all of the adobo sauce out of the can. Mix well to incorporate. Cover and let marinate in the refrigerator for 2-4 hours",
+         "In a separate bowl, mix together panko bread crumbs, chili powder, salt, pepper, and paprika",
+         "Remove chicken from the refrigerator and dredge the pieces in the bread crumb mixture for an evencoat. Fry them in 350&deg;F/180&deg;C oil until they are cripsy and golden brown (about 2 minutes)",
+         "Drain on paper towels and garnish with an additional sprinkle of somked paprika",
+         "Enjoy!"
+      ],
+      "displayname":[  
+         "2 pounds chicken breast, boneless and skinless",
+         "2 cups buttermilk",
+         "1 7-ounce can of chiles in adobo sauce",
+         "2 cups panko bread crumbs",
+         "1 teaspoon chili powder",
+         "1/2 teaspoon salt",
+         "1/2 teaspoon pepper",
+         "1 teaspoon smoked paprika",
+         "Oil for frying"
+      ]
+   }
+]
