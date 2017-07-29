@@ -5,16 +5,9 @@ var rp = require('request-promise');
 var placesModel = require('../models/placesModel');
 
 exports.hello = function(req, res) {
-  
-  var hello = new placesModel;
 
+  var data = new placesModel;
 
+  data.getNearbyLocation(req, res);
 
-  data = hello.test();
-
-  // places = data.places;
-  
-  res.send(
-    JSON.stringify(data.test)
-  );
 }
