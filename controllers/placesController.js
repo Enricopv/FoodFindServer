@@ -8,6 +8,15 @@ exports.hello = function(req, res) {
 
   var data = new placesModel;
 
-  data.getNearbyLocation(req, res);
+  // data.getNearbyLocation(req, res);
+  data.getNearbyLocation(req, res)
 
+  // data.test();
+
+  // res.send(JSON.stringify(data.places)) 
+
+}
+
+exports.getFoodNearLocation = function (req, res) {
+  res.send(JSON.stringify({hello: 'maam'}))
 }
