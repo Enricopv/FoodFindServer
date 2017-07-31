@@ -4,21 +4,16 @@ var client = new Client();
 var rp = require('request-promise');
 var placesModel = require('../models/placesModel');
 
-exports.hello = function(req, res) {
-
-  // var data = new placesModel;
-  
-  // placesModel.getFoodNearLocation(req, res, (result) => {    
-  //   res.send(JSON.stringify(result))
-  // });
-  
-  placesModel.getFoodNearLocationPromise
+exports.getFoodWithLocation = function(req, res) {
+  var location = req.body.location;
+  placesModel.getWithLocationPromise(location)
     .then((results) => {
       res.send(JSON.stringify(results))
     })
 
 }
 
-exports.getFoodNearLocation = function (req, res) {
-  res.send(JSON.stringify({hello: 'maam'}))
-}
+
+// exports.getFoodNearLocation = function (req, res) {
+//   res.send(JSON.stringify({hello: 'maam'}))
+// }

@@ -19,7 +19,14 @@ class Api_Demo extends Component {
   }
 
   componentDidMount() {
-    Axios.get('/api/getfoodlocation')
+    // Axios.get('/api/getfoodlocation')
+    //   .then(response => {
+    //     this.setState({
+    //       data: response.data
+    //     })
+        
+    //   })
+    Axios.post('/api/getfoodlocation', {location: "34.047893, -118.252632"})
       .then(response => {
         this.setState({
           data: response.data

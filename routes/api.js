@@ -19,6 +19,9 @@ router.get('/getproducts', function (req, res) {
 
 // router.get('/getFoodLocation', places.getFoodNearLocation);
 
-router.get('/getFoodLocation', placesController.hello);
+// router.post('/getFoodLocation', placesController.hello);
+
+
+router.post('/getFoodLocation', placesController.getFoodWithLocation);
 
 module.exports = router;

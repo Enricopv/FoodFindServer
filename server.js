@@ -14,7 +14,7 @@ var port = process.env.PORT || 1337;
 
 server.use(logger('dev'));
 server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({ extended: false }));
+server.use(bodyParser.urlencoded({ extended: true }));
 server.use(cookieParser());
 
 // Load Environment Variables
