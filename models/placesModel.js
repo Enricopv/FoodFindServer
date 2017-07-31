@@ -79,8 +79,8 @@ exports.getFoodNearLocationPromise = new Promise(
     var nearOptions = {
       uri: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json',
       qs: {        
-        // location: "34.27209,-118.87939",
-        location: "34.047893, -118.252632", 
+        location: "34.27209,-118.87939",
+        // location: "34.047893, -118.252632", 
         type: "restaurant",
         rankby: "distance",
         key: process.env.GOOGLE_PLACES_API_KEY
