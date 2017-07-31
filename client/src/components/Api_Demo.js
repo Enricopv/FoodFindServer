@@ -26,7 +26,10 @@ class Api_Demo extends Component {
     //     })
         
     //   })
-    Axios.post('/api/getfoodlocation', {location: "34.047893, -118.252632"})
+    // var location = "34.047893, -118.252632"; // texas
+    var location= "34.047893, -118.252632";
+
+    Axios.post('/api/getfoodlocation', {location: location})
       .then(response => {
         this.setState({
           data: response.data

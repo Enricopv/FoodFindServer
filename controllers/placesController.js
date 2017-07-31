@@ -6,7 +6,7 @@ var placesModel = require('../models/placesModel');
 
 exports.getFoodWithLocation = function(req, res) {
   var location = req.body.location;
-  placesModel.getWithLocationPromise(location)
+  placesModel.getWithLocationPromise
     .then((results) => {
       res.send(JSON.stringify(results))
     })
