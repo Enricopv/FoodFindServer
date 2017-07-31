@@ -13,7 +13,8 @@ class Api_Demo extends Component {
   constructor() {
     super();
     this.state = {
-      data: ""
+      data: "",
+      images: []
     }
   }
 
@@ -23,6 +24,7 @@ class Api_Demo extends Component {
         this.setState({
           data: response.data
         })
+        
       })
   }
 
@@ -34,8 +36,9 @@ class Api_Demo extends Component {
             <Row>
               <Col>
                 <pre className="showData">
-                  {JSON.stringify(this.state.data, null, 2)}
-                </pre>              
+                     {JSON.stringify(this.state.data, null, 2)}  
+                      
+                </pre>           
               </Col>
             </Row>
           </Grid> 

@@ -6,14 +6,16 @@ var placesModel = require('../models/placesModel');
 
 exports.hello = function(req, res) {
 
-  var data = new placesModel;
-
-  // data.getNearbyLocation(req, res);
-  data.getNearbyLocation(req, res)
-
-  // data.test();
-
-  // res.send(JSON.stringify(data.places)) 
+  // var data = new placesModel;
+  
+  // placesModel.getFoodNearLocation(req, res, (result) => {    
+  //   res.send(JSON.stringify(result))
+  // });
+  
+  placesModel.getFoodNearLocationPromise
+    .then((results) => {
+      res.send(JSON.stringify(results))
+    })
 
 }
 

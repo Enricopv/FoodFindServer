@@ -4,8 +4,10 @@ var bodyParser = require('body-parser');
 var logger = require('morgan');
 var api = require('./routes/api');
 var dotenv = require('dotenv');
+var cors = require('cors');
 
 var server = express();
+server.use(cors());
 
 //Necessary for Heroku
 var port = process.env.PORT || 1337;
