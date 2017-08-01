@@ -22,6 +22,8 @@ router.get('/getproducts', function (req, res) {
 // router.post('/getFoodLocation', placesController.hello);
 
 
+// router.post('/getFoodLocation', placesController.getFoodWithLocation);
+
 router.post('/getFoodLocation', placesController.getFoodWithLocation);
 
 module.exports = router;
