@@ -33,10 +33,6 @@ var dataToPlaces = (data) => {
   );
 }
 
-// Finally figured out using .map with Promise.all.
-// - I take the data array and map out each element with a promise setDetails into
-//   a new array get[]. Look like get[setDetails(data[0]), setDetails(data[1]), etc] 
-// - Then Promise.all runs each of these sequentially and stores the results in the places[]
 var getPlacesDetails = (data) => {
   return new Promise (
     (resolve, reject) => {
@@ -47,20 +43,3 @@ var getPlacesDetails = (data) => {
     }
   )
 }
-
-// var getPlacesPhotos = (data) => {
-//   return new Promise (
-//     (resolve, reject) => {
-//       var places = [];
-//       var get = data.map(placesModel.setPhotos);
-//       places = Promise.all(get)
-//       resolve(places);
-//     }
-//   )
-// }
-
-
-
-// exports.getFoodNearLocation = function (req, res) {
-//   res.send(JSON.stringify({hello: 'maam'}))
-// }
