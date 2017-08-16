@@ -111,7 +111,7 @@ exports.getDistance = (place) => {
           units: "imperial",
           destinations: "place_id:"+place.place_id,
           key: process.env.GOOGLE_PLACES_API_KEY,
-          origins: place.markerLocation
+          origins: "34.047893,-118.252632"
         },
         headers: {
             'User-Agent': 'Request-Promise'
