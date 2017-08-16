@@ -10,7 +10,7 @@ dotenv.load();
 
 
 class Place {
-    constructor(place_id, price_level, rating, name, vicinity) {
+    constructor(place_id, price_level, rating, name, vicinity, place_pic) {
         // always initialize all instance properties
         this.place_id = place_id;
         this.price_level = price_level;
@@ -18,6 +18,7 @@ class Place {
         this.name = name;
         this.vicinity = vicinity;
         this.photoImages = [];
+        this.place_pic = place_pic;
     }    
 }
  
