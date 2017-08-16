@@ -11,8 +11,9 @@ exports.getFoodWithLocation = function(req, res) {
   placesModel.getWithLocationPromise(location)
     .then(dataToPlaces)
     .then(getPlacesDetails)
-    .then((test) => {
-      res.send(JSON.stringify(test))
+    .then(getDistanceDetails)
+    .then((data) => {
+      res.send(JSON.stringify(data))
     })
     .catch((err) => {
       console.log(err);
@@ -25,8 +26,8 @@ var dataToPlaces = (data) => {
     (resolve, reject) => {      
       var places = [];
       data.results.forEach(spot => {
-        var place = new Place(spot.place_id,spot.price_level,spot.rating, spot.name, spot.vicinity, spot.photos);       
-       places.push(place);
+        var place = new Place(spot.place_id,spot.price_level,spot.rating, spot.name, spot.vicinity, spot.photos);         
+        places.push(place);
       }) // Foreach    
       resolve(places); 
     }
@@ -38,6 +39,17 @@ var getPlacesDetails = (data) => {
     (resolve, reject) => {
       var places = [];
       var get = data.map(placesModel.setDetails);
+      places = Promise.all(get);
+      resolve(places);
+    }
+  )
+}
+
+var getDistanceDetails = (data) => {
+  return new Promise(
+    (resolve, reject) => {
+      var places = [];
+      var get = data.map(placesModel.getDistance);
       places = Promise.all(get);
       resolve(places);
     }

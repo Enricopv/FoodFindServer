@@ -53,6 +53,7 @@ exports.getWithLocationPromise = (location) => {
 exports.setDetails = (place) => {
   return new Promise( 
     (resolve, reject) => {
+
       var detailsResult;
       var detailOptions = {
         uri: 'https://maps.googleapis.com/maps/api/place/details/json',
@@ -65,7 +66,6 @@ exports.setDetails = (place) => {
         },
         json: true // Automatically parses the JSON string in the response
       };
-
 
       rp(detailOptions)
         .then(function (data) {
@@ -98,6 +98,38 @@ exports.setDetails = (place) => {
     }
   ) // promise       
 }
+
+exports.getDistance = (place) => {
+  return new Promise(
+    (resolve, reject) => {
+      var distanceResult;
+      var distanceOptions = {
+        uri: 'https://maps.googleapis.com/maps/api/distancematrix/json',
+        qs: {        
+          units: "imperial",
+          destinations: "place_id:"+place.place_id,
+          key: process.env.GOOGLE_PLACES_API_KEY,
+          origins: "34.047893,-118.252632"
+        },
+        headers: {
+            'User-Agent': 'Request-Promise'
+        },
+        json: true // Automatically parses the JSON string in the response
+      };
+
+      // console.log(distanceOptions);
+
+      rp(distanceOptions)
+        .then(function (data) {          
+          distanceResult = data; 
+        }) 
+        .then(()=>{   
+          place.distance = distanceResult.rows[0].elements[0].distance.text;
+          resolve(place);
+        }) //then
+    }
+  )
+} 
 
 
 
