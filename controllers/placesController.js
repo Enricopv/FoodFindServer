@@ -26,7 +26,7 @@ var dataToPlaces = (data) => {
     (resolve, reject) => {      
       var places = [];
       data.results.forEach(spot => {
-        var place = new Place(spot.place_id,spot.price_level,spot.rating, spot.name, spot.vicinity, spot.photos);         
+        var place = new Place(spot.place_id,spot.price_level,spot.rating, spot.name, spot.vicinity, data.location);         
         places.push(place);
       }) // Foreach    
       resolve(places); 

@@ -44,6 +44,7 @@ exports.getWithLocationPromise = (location) => {
       var b = this;
       rp(nearOptions)
         .then(function (data) {
+          data.location = location;
           resolve(data); 
         })  
     }
@@ -102,6 +103,7 @@ exports.setDetails = (place) => {
 exports.getDistance = (place) => {
   return new Promise(
     (resolve, reject) => {
+      console.log(place.markerLocation);
       var distanceResult;
       var distanceOptions = {
         uri: 'https://maps.googleapis.com/maps/api/distancematrix/json',
@@ -109,7 +111,7 @@ exports.getDistance = (place) => {
           units: "imperial",
           destinations: "place_id:"+place.place_id,
           key: process.env.GOOGLE_PLACES_API_KEY,
-          origins: "34.047893,-118.252632"
+          origins: place.markerLocation
         },
         headers: {
             'User-Agent': 'Request-Promise'
