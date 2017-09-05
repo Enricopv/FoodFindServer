@@ -41,7 +41,7 @@ class Api_Demo extends Component {
   render() {
     return (
       <div className="Api_Demo">
-        <p>Here is a sample response to an api call to /api/getdata!</p>    
+        <p>Here is a sample response to an api call to /api/getdata</p>    
           <Grid>
             <Row>
               <Col>
